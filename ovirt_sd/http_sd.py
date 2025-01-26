@@ -1,5 +1,7 @@
 """
-oVirt HTTP Service Discovery
+oVirt SD HTTP module.
+
+Contains logic for implementing HTTP SD
 """
 
 import os
@@ -17,6 +19,7 @@ app = FastAPI(title="oVirt Service Discovery", docs_url="/")
 
 
 class TargetsGroup(pydantic.BaseModel):
+    """A structure for responding to a request for information about targets."""
     targets: List[str]
     labels: Dict[str, str]
 

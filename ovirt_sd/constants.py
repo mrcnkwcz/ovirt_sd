@@ -1,5 +1,7 @@
 """
-oVirt SD Constants module
+oVirt SD constants module.
+
+Contains constants for discovery hosts and virtual machines and formatting labels.
 """
 
 import ovirtsdk4.types as sdk_types

@@ -1,6 +1,9 @@
 """
-oVirt Service Discovery module
+oVirt SD discovery module.
+
+Contains logic for discovery hosts and virtual machines and getting target groups.
 """
+
 import ovirtsdk4 as sdk
 import ovirtsdk4.types as sdk_types
 
