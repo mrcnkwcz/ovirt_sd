@@ -20,7 +20,7 @@ def get_engine_connection():
         username=os.environ.get("OVIRT_USERNAME"),
         password=os.environ.get("OVIRT_PASSWORD"),
         insecure=bool(os.environ.get("OVIRT_INSECURE")) | False,
-        timeout=60,
+        timeout=int(os.environ.get("OVIRT_SD_TIMEOUT")) | 60,
     )
     try:
         yield conn

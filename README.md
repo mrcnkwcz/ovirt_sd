@@ -27,6 +27,14 @@ Collection for oVirt environments
 - `__meta_ovirt_vm_tag_<tagname>`: `true` for each tag assigned to the VM
 - `__meta_ovirt_vm_affinity_label_<labelname>`: `true` for each affinity label assigned to the VM
 
+## Env
+- `OVIRT_URL`: URL Engine. Example: "https://engine.infra.example/ovirt-engine/api"
+- `OVIRT_USERNAME`: Username with domain for authentication. Example: "api@internal" or "api@internalsso"
+- `OVIRT_PASSWORD`: Password for user
+- `OVIRT_INSECURE`: A boolean flag if the server TLS certificate should be checked. Default value is `False`
+- `OVIRT_SD_TIMEOUT`: Time (in seconds) during which the connection to the server must be established. Default value is `60`
+- `OVIRT_SD_PORT`: HTTP SD port
+
 ## Licenses
 * Apache 2.0
 
